@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Mi plantilla Xaringan 1</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="CRG" />
+    <meta name="date" content="2020-02-12" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+    <script src="libs/jquery-1.12.4/jquery.min.js"></script>
+    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding-0.7/datatables.js"></script>
+    <link href="libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+    <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet-1.3.1/leaflet.js"></script>
+    <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+    <script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+    <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+    <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet-binding-2.0.2/leaflet.js"></script>
+    <link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+    <script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+    <script src="libs/dygraphs-1.1.1/shapes.js"></script>
+    <script src="libs/moment-2.8.4/moment.js"></script>
+    <script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+    <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+    <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+    <script src="libs/threejs-85/three.min.js"></script>
+    <script src="libs/threejs-85/Detector.js"></script>
+    <script src="libs/threejs-85/Projector.js"></script>
+    <script src="libs/threejs-85/CanvasRenderer.js"></script>
+    <script src="libs/threejs-85/TrackballControls.js"></script>
+    <script src="libs/threejs-85/StateOrbitControls.js"></script>
+    <script src="libs/scatterplotThree-binding-0.3.1/scatterplotThree.js"></script>
+    <link rel="stylesheet" href="mtheme_max.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Mi plantilla Xaringan 1
+## Tema: Max Kuhn
+<html>
+<div style="float:left">
+
+</div>
+<hr color='#DF7401' size=1px width=800px>
+</html>
+### CRG
+### Institución presentadora de slides
+### 2020-02-12
+
+---
+
+
+
+# Inquietud
+
+&gt; Agregar logo en la portada.
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 150px
+background-position: 98% 2%
+
+class: left
+
+# Título
+
+Resaltando texto en color .red[rojo], .orange[naranja] y .blue[azul].
+
+
+El resalte rojo: `.red[rojo]`  
+
+El resalte naranja: `.orange[naranja]`  
+
+El resalte azul: `.blue[azul]`
+
+
+Cargando la imagen:
+
+```markdown
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+```
+
+Posicionando la imagen:
+
+```
+background-size: 150px
+background-position: 98% 2%
+```
+
+
+---
+class: inverse, center, middle
+
+# Título centrado
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 2%
+
+# Contenido...
+
+--
+
+- Efecto 1, superíndice...&lt;sup&gt;1&lt;/sup&gt;
+
+--
+
+- Efecto 2...
+    - escala
+        - inferior
+
+--
+
+- Efecto 3...
+    * inferior3
+
+--
+
+- Efecto 4...
+
+
+.footnote[
+[1] [CRG](https://github.com/riveracrist)]
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 50px
+background-position: 98% 2%
+
+# Texto a dos columnas...
+
+Some differences between using remark.js (left) and using **xaringan** (right):
+
+.pull-left[
+1. Start with a boilerplate HTML file;
+
+1. Plain Markdown;
+
+1. Write JavaScript to autoplay slides;
+
+1. Manually configure MathJax;
+
+1. Highlight code with `*`;
+
+1. Edit Markdown source and refresh browser to see updated slides;
+]
+
+.pull-right[
+1. Start with an R Markdown document;
+
+1. R Markdown (can embed R/other code chunks);
+
+1. Provide an option `autoplay`;
+
+1. MathJax just works;&lt;sup&gt;*&lt;/sup&gt;
+
+1. Highlight code with `{{}}`;
+
+1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
+]
+
+.footnote[[*] Not really. See next page.]
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 2%
+
+# Expresiones matemáticas
+
+
+
+`$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$`
+`$$\left[\int_{0}^{\infty} f(x) \; dx\right]$$`
+`\(\displaystyle \lim_{x \to \infty} sin(x)\)`
+
+`$$f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}$$`
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 2%
+
+# R Plots
+
+
+```r
+par(mar = c(4, 4, 1, .1))
+scatter.smooth(iris$Sepal.Length, iris$Petal.Length)
+```
+
+![](ejemplo_files/figure-html/cars-1.svg)&lt;!-- --&gt;
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 12%
+
+# Tabla estática
+
+If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
+
+
+```r
+knitr::kable(head(iris), format = 'html')
+```
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:right;"&gt; Sepal.Length &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Sepal.Width &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Petal.Length &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Petal.Width &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Species &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 5.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 4.9 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 4.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 4.6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 5.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 5.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.9 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; setosa &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 2%
+
+# Tabla dinámica
+
+
+```r
+DT::datatable(
+  head(iris, 10),
+  fillContainer = FALSE, options = list(pageLength = 5)
+)
+```
+
+<div id="htmlwidget-657d090acc482c478f44" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-657d090acc482c478f44">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 60px
+background-position: 98% 2%
+
+# Gráfico interactivo 1
+
+
+```r
+library(leaflet)
+leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)
+```
+
+<div id="htmlwidget-e88fb8485341ad7a75c6" style="width:100%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e88fb8485341ad7a75c6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 2%
+
+# Gráfico interactivo 2
+
+
+```
+## Registered S3 method overwritten by 'xts':
+##   method     from
+##   as.zoo.xts zoo
+```
+
+<div id="htmlwidget-53db31210368626e9483" style="width:100%;height:432px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-53db31210368626e9483">{"x":{"attrs":{"title":"New Haven Temperatures","labels":["year","V1"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"showRangeSelector":true,"dateWindow":["1920-01-01T00:00:00.000Z","1960-01-01T00:00:00.000Z"],"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"yearly","annotations":[],"shadings":[],"events":[],"format":"date","data":[["1912-01-01T00:00:00.000Z","1913-01-01T00:00:00.000Z","1914-01-01T00:00:00.000Z","1915-01-01T00:00:00.000Z","1916-01-01T00:00:00.000Z","1917-01-01T00:00:00.000Z","1918-01-01T00:00:00.000Z","1919-01-01T00:00:00.000Z","1920-01-01T00:00:00.000Z","1921-01-01T00:00:00.000Z","1922-01-01T00:00:00.000Z","1923-01-01T00:00:00.000Z","1924-01-01T00:00:00.000Z","1925-01-01T00:00:00.000Z","1926-01-01T00:00:00.000Z","1927-01-01T00:00:00.000Z","1928-01-01T00:00:00.000Z","1929-01-01T00:00:00.000Z","1930-01-01T00:00:00.000Z","1931-01-01T00:00:00.000Z","1932-01-01T00:00:00.000Z","1933-01-01T00:00:00.000Z","1934-01-01T00:00:00.000Z","1935-01-01T00:00:00.000Z","1936-01-01T00:00:00.000Z","1937-01-01T00:00:00.000Z","1938-01-01T00:00:00.000Z","1939-01-01T00:00:00.000Z","1940-01-01T00:00:00.000Z","1941-01-01T00:00:00.000Z","1942-01-01T00:00:00.000Z","1943-01-01T00:00:00.000Z","1944-01-01T00:00:00.000Z","1945-01-01T00:00:00.000Z","1946-01-01T00:00:00.000Z","1947-01-01T00:00:00.000Z","1948-01-01T00:00:00.000Z","1949-01-01T00:00:00.000Z","1950-01-01T00:00:00.000Z","1951-01-01T00:00:00.000Z","1952-01-01T00:00:00.000Z","1953-01-01T00:00:00.000Z","1954-01-01T00:00:00.000Z","1955-01-01T00:00:00.000Z","1956-01-01T00:00:00.000Z","1957-01-01T00:00:00.000Z","1958-01-01T00:00:00.000Z","1959-01-01T00:00:00.000Z","1960-01-01T00:00:00.000Z","1961-01-01T00:00:00.000Z","1962-01-01T00:00:00.000Z","1963-01-01T00:00:00.000Z","1964-01-01T00:00:00.000Z","1965-01-01T00:00:00.000Z","1966-01-01T00:00:00.000Z","1967-01-01T00:00:00.000Z","1968-01-01T00:00:00.000Z","1969-01-01T00:00:00.000Z","1970-01-01T00:00:00.000Z","1971-01-01T00:00:00.000Z"],[49.9,52.3,49.4,51.1,49.4,47.9,49.8,50.9,49.3,51.9,50.8,49.6,49.3,50.6,48.4,50.7,50.9,50.6,51.5,52.8,51.8,51.1,49.8,50.2,50.4,51.6,51.8,50.9,48.8,51.7,51,50.6,51.7,51.5,52.1,51.3,51,54,51.4,52.7,53.1,54.6,52,52,50.9,52.6,50.2,52.6,51.6,51.9,50.5,50.9,51.7,51.4,51.7,50.8,51.9,51.8,51.9,53]]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+
+
+
+---
+# Gráfico interactivo 3
+
+<div id="htmlwidget-6624380be7126967e508" style="width:100%;height:432px;" class="scatterplotThree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6624380be7126967e508">{"x":{"NROW":223,"height":null,"width":null,"axis":true,"numticks":[6,6,6],"xticklabs":null,"yticklabs":null,"zticklabs":null,"color":[["#FF0000","#FF0700","#FF0E00","#FF1500","#FF1B00","#FF2200","#FF2900","#FF3000","#FF3700","#FF3E00","#FF4500","#FF4B00","#FF5200","#FF5900","#FF6000","#FF6700","#FF6E00","#FF7500","#FF7B00","#FF8200","#FF8900","#FF9000","#FF9700","#FF9E00","#FFA500","#FFAC00","#FFB200","#FFB900","#FFC000","#FFC700","#FFCE00","#FFD500","#FFDC00","#FFE200","#FFE900","#FFF000","#FFF700","#FFFE00","#F9FF00","#F2FF00","#ECFF00","#E5FF00","#DEFF00","#D7FF00","#D0FF00","#C9FF00","#C2FF00","#BCFF00","#B5FF00","#AEFF00","#A7FF00","#A0FF00","#99FF00","#92FF00","#8CFF00","#85FF00","#7EFF00","#77FF00","#70FF00","#69FF00","#62FF00","#5BFF00","#55FF00","#4EFF00","#47FF00","#40FF00","#39FF00","#32FF00","#2BFF00","#25FF00","#1EFF00","#17FF00","#10FF00","#09FF00","#02FF00","#00FF05","#00FF0B","#00FF12","#00FF19","#00FF20","#00FF27","#00FF2E","#00FF35","#00FF3B","#00FF42","#00FF49","#00FF50","#00FF57","#00FF5E","#00FF65","#00FF6B","#00FF72","#00FF79","#00FF80","#00FF87","#00FF8E","#00FF95","#00FF9C","#00FFA2","#00FFA9","#00FFB0","#00FFB7","#00FFBE","#00FFC5","#00FFCC","#00FFD2","#00FFD9","#00FFE0","#00FFE7","#00FFEE","#00FFF5","#00FFFC","#00FCFF","#00F5FF","#00EEFF","#00E7FF","#00E0FF","#00D9FF","#00D2FF","#00CCFF","#00C5FF","#00BEFF","#00B7FF","#00B0FF","#00A9FF","#00A2FF","#009CFF","#0095FF","#008EFF","#0087FF","#0080FF","#0079FF","#0072FF","#006BFF","#0065FF","#005EFF","#0057FF","#0050FF","#0049FF","#0042FF","#003BFF","#0035FF","#002EFF","#0027FF","#0020FF","#0019FF","#0012FF","#000BFF","#0005FF","#0200FF","#0900FF","#1000FF","#1700FF","#1E00FF","#2500FF","#2B00FF","#3200FF","#3900FF","#4000FF","#4700FF","#4E00FF","#5500FF","#5B00FF","#6200FF","#6900FF","#7000FF","#7700FF","#7E00FF","#8500FF","#8C00FF","#9200FF","#9900FF","#A000FF","#A700FF","#AE00FF","#B500FF","#BC00FF","#C200FF","#C900FF","#D000FF","#D700FF","#DE00FF","#E500FF","#EC00FF","#F200FF","#F900FF","#FF00FE","#FF00F7","#FF00F0","#FF00E9","#FF00E2","#FF00DC","#FF00D5","#FF00CE","#FF00C7","#FF00C0","#FF00B9","#FF00B2","#FF00AC","#FF00A5","#FF009E","#FF0097","#FF0090","#FF0089","#FF0082","#FF007B","#FF0075","#FF006E","#FF0067","#FF0060","#FF0059","#FF0052","#FF004B","#FF0045","#FF003E","#FF0037","#FF0030","#FF0029","#FF0022","#FF001B","#FF0015","#FF000E","#FF0007"]],"size":1,"stroke":"black","flipy":true,"grid":true,"renderer":"auto","signif":8,"bg":"#ffffff","cexsymbols":1,"xlim":{},"ylim":{},"zlim":{},"pch":["@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@","@"],"axisLabels":["x","z","y"],"linealpha":1,"alpha":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],"vertices":[[0.080464587,0,0.22790383,0.057714367,0.0045045045,0.26671876,0.038544288,0.009009009,0.30742168,0.023109523,0.013513514,0.34968312,0.011535008,0.018018018,0.393161,0.0039144337,0.022522523,0.43750338,0.0003094856,0.027027027,0.48235133,0.00074934373,0.031531532,0.52734183,0.0052304477,0.036036036,0.5721107,0.013716525,0.040540541,0.61629556,0.026138885,0.045045045,0.65953875,0.042396974,0.04954955,0.70149024,0.062359191,0.054054054,0.74181045,0.085863951,0.058558559,0.78017301,0.11272099,0.063063063,0.81626739,0.14271292,0.067567568,0.84980142,0.17559697,0.072072072,0.88050367,0.21110695,0.076576577,0.9081256,0.24895543,0.081081081,0.93244364,0.28883605,0.085585586,0.95326094,0.33042598,0.09009009,0.97040899,0.37338858,0.094594595,0.983749,0.41737609,0.099099099,0.99317297,0.46203244,0.1036036,0.99860463,0.50699616,0.10810811,1,0.5519033,0.11261261,0.9973478,0.59639035,0.11711712,0.99066949,0.64009721,0.12162162,0.98001913,0.6826701,0.12612613,0.96548293,0.72376439,0.13063063,0.94717855,0.76304747,0.13513514,0.92525416,0.80020134,0.13963964,0.89988723,0.83492527,0.14414414,0.87128309,0.86693817,0.14864865,0.83967327,0.89598093,0.15315315,0.80531365,0.92181845,0.15765766,0.76848235,0.94424159,0.16216216,0.72947749,0.96306885,0.16666667,0.68861482,0.97814782,0.17117117,0.64622509,0.98935646,0.17567568,0.60265142,0.99660403,0.18018018,0.55824653,0.99983186,0.18468468,0.51336985,0.99901383,0.18918919,0.46838464,0.99415657,0.19369369,0.42365503,0.98529938,0.1981982,0.37954309,0.97251396,0.2027027,0.33640588,0.9559038,0.20720721,0.29459258,0.93560337,0.21171171,0.25444165,0.91177697,0.21621622,0.21627808,0.88461747,0.22072072,0.18041081,0.85434471,0.22522523,0.14713015,0.82120375,0.22972973,0.1167055,0.78546284,0.23423423,0.089383134,0.74741128,0.23873874,0.065384208,0.70735708,0.24324324,0.044902984,0.66562448,0.24774775,0.02810525,0.62255126,0.25225225,0.015126974,0.57848609,0.25675676,0.0060732095,0.53378566,0.26126126,0.001017243,0.4888118,0.26576577,0,0.44392854,0.27027027,0.0030297145,0.3994992,0.27477477,0.010081862,0.35588341,0.27927928,0.02109936,0.31343422,0.28378378,0.035993026,0.27249524,0.28828829,0.054642302,0.23339785,0.29279279,0.076896232,0.19645852,0.2972973,0.10257468,0.16197626,0.3018018,0.13146979,0.1302302,0.30630631,0.16334767,0.10147729,0.31081081,0.19795029,0.07595028,0.31531532,0.23499755,0.053855801,0.31981982,0.27418957,0.035372696,0.32432432,0.31520911,0.020650577,0.32882883,0.35772414,0.0098086129,0.33333333,0.40139052,0.0029345638,0.33783784,0.44585478,8.4072102e-05,0.34234234,0.49075702,0.0012802113,0.34684685,0.53573376,0.0065132993,0.35135135,0.58042095,0.015740976,0.35585586,0.62445685,0.028888549,0.36036036,0.66748503,0.045849594,0.36486486,0.70915718,0.066486819,0.36936937,0.749136,0.090633176,0.37387387,0.78709786,0.11809321,0.37837838,0.82273549,0.14864465,0.38288288,0.85576042,0.18204019,0.38738739,0.88590533,0.21800951,0.39189189,0.9129262,0.25626145,0.3963964,0.93660432,0.29648639,0.4009009,0.95674802,0.33835873,0.40540541,0.97319425,0.38153951,0.40990991,0.98580988,0.42567923,0.41441441,0.99449279,0.47042058,0.41891892,0.99917271,0.51540141,0.42342342,0.99981175,0.56025761,0.42792793,0.99640474,0.6046261,0.43243243,0.98897925,0.64814774,0.43693694,0.9775954,0.69047023,0.44144144,0.96234532,0.731251,0.44594595,0.94335246,0.77015995,0.45045045,0.92077056,0.80688212,0.45495495,0.89478241,0.84112027,0.45945946,0.86559838,0.87259725,0.46396396,0.83345468,0.90105828,0.46846847,0.79861151,0.92627297,0.47297297,0.76135092,0.94803722,0.47747748,0.7219745,0.96617487,0.48198198,0.68080099,0.98053909,0.48648649,0.63816367,0.99101362,0.49099099,0.59440767,0.99751366,0.4954955,0.54988718,0.99998661,0.5,0.50496256,0.99841244,0.5045045,0.45999746,0.99280391,0.50900901,0.41535586,0.98320639,0.51351351,0.3713991,0.9696976,0.51801802,0.328483,0.95238686,0.52252252,0.28695494,0.93141431,0.52702703,0.24715107,0.9069497,0.53153153,0.20939358,0.87919107,0.53603604,0.17398811,0.84836311,0.54054054,0.14122124,0.81471535,0.54504505,0.11135821,0.77852017,0.54954955,0.084640746,0.74007054,0.55405405,0.061285111,0.6996777,0.55855856,0.041480359,0.6576686,0.56306306,0.025386801,0.61438329,0.56756757,0.013134706,0.57017215,0.57207207,0.0048232486,0.52539304,0.57657658,0.00051970716,0.48040843,0.58108108,0.00025891651,0.43558245,0.58558559,0.0040429876,0.39127795,0.59009009,0.01184129,0.34785354,0.59459459,0.023590701,0.30566073,0.5990991,0.039196113,0.26504105,0.6036036,0.058531208,0.2263233,0.60810811,0.081439479,0.18982088,0.61261261,0.10773549,0.15582926,0.61711712,0.13720639,0.12462359,0.62162162,0.16961363,0.096456457,0.62612613,0.20469488,0.071555865,0.63063063,0.24216618,0.050123374,0.63513514,0.28172422,0.032332469,0.63963964,0.32304879,0.018327159,0.64414414,0.36580538,0.00822081,0.64864865,0.40964791,0.0020952292,0.65315315,0.45422148,0,0.65765766,0.49916531,0.0019520822,0.66216216,0.54411558,0.0079356745,0.66666667,0.58870844,0.017902343,0.67117117,0.63258295,0.031771411,0.67567568,0.67538394,0.049430616,0.68018018,0.71676498,0.070737015,0.68468468,0.75639109,0.095518142,0.68918919,0.79394153,0.12357341,0.69369369,0.82911234,0.15467571,0.6981982,0.86161883,0.1885733,0.7027027,0.89119787,0.22499179,0.70720721,0.91761004,0.26363638,0.71171171,0.94064154,0.30419428,0.71621622,0.96010595,0.34633717,0.72072072,0.9758457,0.38972394,0.72522523,0.98773339,0.43400338,0.72972973,0.9956728,0.47881708,0.73423423,0.99959966,0.5238023,0.73873874,0.99948219,0.56859488,0.74324324,0.99532132,0.61283227,0.74774775,0.98715076,0.65615638,0.75225225,0.97503662,0.69821652,0.75675676,0.95907698,0.73867223,0.76126126,0.93940101,0.77719605,0.76576577,0.91616799,0.81347614,0.77027027,0.88956597,0.84721883,0.77477477,0.85981029,0.87815099,0.77927928,0.8271418,0.90602224,0.78378378,0.79182494,0.93060697,0.78828829,0.75414559,0.95170618,0.79279279,0.71440873,0.96914909,0.7972973,0.67293603,0.9827945,0.8018018,0.63006318,0.99253195,0.80630631,0.58613722,0.99828264,0.81081081,0.54151371,1,0.81531532,0.49655386,0.99767014,0.81981982,0.45162159,0.99131192,0.82432432,0.40708062,0.9809768,0.82882883,0.36329147,0.96674844,0.83333333,0.32060861,0.94874201,0.83783784,0.27937752,0.92710327,0.84234234,0.23993197,0.90200738,0.84684685,0.20259123,0.87365746,0.85135135,0.16765757,0.84228301,0.85585586,0.13541376,0.80813798,0.86036036,0.10612079,0.77149876,0.86486486,0.080015781,0.73266193,0.86936937,0.05731004,0.69194186,0.87387387,0.03818736,0.64966815,0.87837838,0.022802527,0.60618299,0.88288288,0.011280077,0.56183837,0.88738739,0.0037132768,0.51699324,0.89189189,0.00016337716,0.47201061,0.8963964,0.00065911263,0.42725458,0.9009009,0.0051964704,0.38308744,0.90540541,0.013738723,0.33986669,0.90990991,0.026216724,0.29794219,0.91441441,0.042529471,0.2576533,0.91891892,0.062544919,0.21932614,0.92342342,0.086101053,0.18327095,0.92792793,0.1130072,0.14977957,0.93243243,0.14304556,0.11912311,0.93693694,0.17597299,0.09154972,0.94144144,0.21152296,0.067282585,0.94594595,0.2494077,0.046518141,0.95045045,0.28932057,0.029424465,0.95495495,0.33093848,0.016139923,0.95945946,0.37392455,0.006772048,0.96396396,0.41793083,0.0013966675,0.96846847,0.46260112,5.7293066e-05,0.97297297,0.50757382,0.0027647663,0.97747748,0.55248491,0.0094971714,0.98198198,0.59697085,0.020200013,0.98648649,0.64067155,0.034786656,0.99099099,0.68323326,0.053139028,0.9954955,0.72431148,0.075108577,1,0.76357369]],"xticklab":["-1.00","-0.60","-0.20","0.20","0.60","1.00"],"yticklab":["-10.00","-6.00","-2.01","1.99","5.98","9.98"],"zticklab":["1.00","0.60","0.20","-0.20","-0.60","-1.00"],"xtick":[0,0.2,0.4,0.6,0.8,1],"ytick":[0,0.2,0.4,0.6,0.8,1],"ztick":[0,0.2,0.4,0.6,0.8,1]},"evals":[],"jsHooks":[]}</script>
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 2%
+
+# Personalización 1
+
+
+.pull-left[
+An example using a leading `*`:
+
+    ```r
+    if (TRUE) {
+    ** message("Very important!")
+    }
+    ```
+Output:
+```r
+if (TRUE) {
+* message("Very important!")
+}
+```
+
+This is invalid R code, so it is a plain fenced code block that is not executed.
+]
+
+.pull-right[
+An example using `{{}}`:
+
+````
+```{r tidy=FALSE}
+if (TRUE) {
+*{{ message("Very important!") }}
+}
+```
+````
+Output:
+
+```r
+if (TRUE) {
+* message("Very important!") 
+}
+```
+
+```
+## Very important!
+```
+
+It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
+]
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 2%
+
+# Personalización 2
+
+An example of using the trailing comment `#&lt;&lt;` to highlight lines:
+
+````markdown
+```{r tidy=FALSE}
+library(ggplot2)
+ggplot(mtcars) + 
+  aes(mpg, disp) + 
+  geom_point() +   #&lt;&lt;
+  geom_smooth()    #&lt;&lt;
+```
+````
+
+Output:
+
+
+```r
+library(ggplot2)
+ggplot(mtcars) + 
+* aes(mpg, disp) +
+* geom_point() +
+* geom_smooth()
+```
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 90%
+
+# Personalización 3
+
+When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
+
+````md
+```{r, highlight.output=c(1, 3)}
+head(iris)
+```
+````
+
+
+```
+*##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+*## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa
+```
+
+---
+background-image: url(https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)
+background-size: 100px
+background-position: 98% 90%
+
+# Temas disponibles
+
+Don't want to learn CSS? Okay, you can use some user-contributed themes. A theme typically consists of two CSS files `foo.css` and `foo-fonts.css`, where `foo` is the theme name. Below are some existing themes:
+
+
+```r
+names(xaringan:::list_css())
+```
+
+```
+##  [1] "chocolate-fonts"  "chocolate"        "default-fonts"   
+##  [4] "default"          "duke-blue"        "fc-fonts"        
+##  [7] "fc"               "hygge-duke"       "hygge"           
+## [10] "ki-fonts"         "ki"               "kunoichi"        
+## [13] "lucy-fonts"       "lucy"             "metropolis-fonts"
+## [16] "metropolis"       "middlebury-fonts" "middlebury"      
+## [19] "ninjutsu"         "rladies-fonts"    "rladies"         
+## [22] "robot-fonts"      "robot"            "rutgers-fonts"   
+## [25] "rutgers"          "shinobi"          "tamu-fonts"      
+## [28] "tamu"             "uo-fonts"         "uo"              
+## [31] "uol-fonts"        "uol"
+```
+
+---
+class: inverse, center, middle
+
+# ¡Gracias!
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+&lt;center&gt;
+&lt;img src="img/joker.gif"/&gt;
+&lt;/center&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
