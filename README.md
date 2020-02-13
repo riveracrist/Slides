@@ -1,4 +1,3 @@
-# Xaringan_slides
-R package Xaringan
-
+# Slides
+Paquetes de R : `Xaringan`, `revealjs`
 
